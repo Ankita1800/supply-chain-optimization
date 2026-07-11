@@ -193,4 +193,5 @@ ABC-XYZ segmentation ensures inventory investment is prioritized toward
 high-value, high-consistency products
 
 Author
+
 Ankita S
