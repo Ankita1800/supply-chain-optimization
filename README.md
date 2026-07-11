@@ -126,13 +126,13 @@ Project Structure
 supply-chain-optimization/
 |
 |-- notebooks/
-|   |-- 01_eda_dataco.ipynb               Exploratory data analysis
-|   |-- 02_feature_engineering.ipynb      Feature creation for all models
-|   |-- 03_demand_forecasting.ipynb       XGBoost demand forecasting model
-|   |-- 04_delay_prediction.ipynb         XGBoost delay classifier
-|   |-- 05_dead_stock_detection.ipynb     ABC-XYZ and Isolation Forest
-|   |-- 06_inventory_optimization.ipynb   EOQ, safety stock, reorder point
-|   `-- app.py                            Streamlit dashboard
+|   |-- 01_eda_dataco.ipynb               
+|   |-- 02_feature_engineering.ipynb      
+|   |-- 03_demand_forecasting.ipynb       
+|   |-- 04_delay_prediction.ipynb         
+|   |-- 05_dead_stock_detection.ipynb     
+|   |-- 06_inventory_optimization.ipynb   
+|   `-- app.py                            
 |
 |-- README.md
 `-- requirements.txt
