@@ -126,6 +126,7 @@ Project Structure
 supply-chain-optimization/
 
 |-- notebooks/
+
 |   |-- 01_eda_dataco.ipynb               
 |   |-- 02_feature_engineering.ipynb      
 |   |-- 03_demand_forecasting.ipynb       
