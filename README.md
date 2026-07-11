@@ -124,7 +124,7 @@ LayerToolsData ProcessingPython, pandas, numpyMachine LearningXGBoost, scikit-le
 Project Structure
 
 supply-chain-optimization/
-|
+
 |-- notebooks/
 |   |-- 01_eda_dataco.ipynb               
 |   |-- 02_feature_engineering.ipynb      
@@ -133,7 +133,7 @@ supply-chain-optimization/
 |   |-- 05_dead_stock_detection.ipynb     
 |   |-- 06_inventory_optimization.ipynb   
 |   `-- app.py                            
-|
+
 |-- README.md
 `-- requirements.txt
 
