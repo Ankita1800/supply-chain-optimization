@@ -8,4 +8,3 @@ Project scaffold for data exploration, modeling, and dashboard work.
 - `notebooks/`: EDA and experiments
 - `src/`: Python scripts
 - `models/`: saved trained models
-- `dashboard/`: Streamlit or FastAPI app
