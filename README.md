@@ -1,10 +1,10 @@
-Supply Chain Inventory Optimization
+**Supply Chain Inventory Optimization**
 
 An end-to-end machine learning system for supply chain analytics built on the
 DataCo Smart Supply Chain dataset containing 180,519 orders across global markets.
 
 
-Problem Statement
+**Problem Statement**
 
 Organizations operating large-scale supply chains face four core inventory problems:
 
@@ -20,7 +20,7 @@ models and classical inventory optimization formulas, producing a per-product
 action recommendation for supply chain managers.
 
 
-Dataset
+**Dataset**
 
 DataCo Smart Supply Chain for Big Data Analysis
 
@@ -34,12 +34,11 @@ Date range: January 2015 to January 2018
 
 
 
-Project Modules
+**Project Modules**
 
 Module 1 — Demand Forecasting
 
 Predicts daily units sold per product using historical order data.
-
 
 Algorithm: XGBoost Regressor
 Features: 7, 14, 21, 30-day lag features, 7, 14, 30-day rolling averages,
@@ -54,7 +53,6 @@ Module 2 — Lead Time Analysis
 Analyzes the gap between scheduled and actual delivery days to quantify
 lead time variability per shipping mode, market, and supplier.
 
-
 Method: Statistical analysis of Days for shipping (real) vs
 Days for shipment (scheduled)
 Output: Lead time mean and standard deviation per product,
@@ -65,7 +63,6 @@ Module 3 — Supply Delay Prediction
 
 Predicts whether an individual shipment will arrive late before it is dispatched,
 enabling proactive intervention.
-
 
 Algorithm: XGBoost Classifier
 Target: Late_delivery_risk (binary — 0 on time, 1 late)
@@ -99,7 +96,7 @@ Module 5 — Inventory Optimization Engine
 Combines outputs from all three models to compute per-product inventory parameters
 and generate final action recommendations.
 
-Formulas used:
+**Formulas used:**
 
 Safety Stock = Z x sqrt(avg_lead_time x std_demand^2 + avg_demand^2 x std_lead_time^2)
 
@@ -112,7 +109,7 @@ Where Z = 1.65 (95% service level), ordering cost = 50, holding rate = 20% of un
 Output: final_inventory_recommendations.csv with columns for safety stock,
 reorder point, EOQ, and action per product.
 
-How to Run
+**How to Run:**
 
 Step 1 — Install dependencies
 
@@ -137,7 +134,7 @@ streamlit run app.py
 
 The dashboard opens at http://localhost:8501
 
-Business Impact
+**Business Impact:**
 
 Delivery delay model with 0.7375 AUC enables proactive intervention before
 shipments go late, reducing customer complaints
@@ -148,6 +145,6 @@ and overordering across the full product catalog
 ABC-XYZ segmentation ensures inventory investment is prioritized toward
 high-value, high-consistency products
 
-Author
+**Author**
 
-Ankita S
+**Ankita S**
