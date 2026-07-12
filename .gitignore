@@ -1,7 +1,22 @@
-/.vscode
-/dashboard
-/data
-/models
-/src
-/v2
-/venv
+# Data files
+*.csv
+*.pkl
+*.png
+*.jpg
+
+# Folders to skip
+data/
+models/
+venv/
+v2/
+src/
+dashboard/
+.vscode/
+
+# Python cache
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Anaconda
+.conda/
