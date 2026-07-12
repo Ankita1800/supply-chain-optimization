@@ -112,34 +112,7 @@ Where Z = 1.65 (95% service level), ordering cost = 50, holding rate = 20% of un
 Output: final_inventory_recommendations.csv with columns for safety stock,
 reorder point, EOQ, and action per product.
 
-Model Performance
-
-ModuleMetricValueDemand ForecastingMAE75.92 unitsDelay PredictionROC-AUC0.7375Delay PredictionAccuracy73.75%Dead Stock DetectionProducts flagged118Inventory OptimizationProducts analysed118
-
-Tech Stack
-
-LayerToolsData ProcessingPython, pandas, numpyMachine LearningXGBoost, scikit-learnAnomaly Detectionscikit-learn Isolation ForestVisualizationMatplotlib, SeabornDashboardStreamlitEnvironmentAnaconda, Jupyter NotebookVersion ControlGit, GitHub
-
-
-Project Structure
-
-supply-chain-optimization/
-
-|-- notebooks/
-
-|   |-- 01_eda_dataco.ipynb               
-|   |-- 02_feature_engineering.ipynb      
-|   |-- 03_demand_forecasting.ipynb       
-|   |-- 04_delay_prediction.ipynb         
-|   |-- 05_dead_stock_detection.ipynb     
-|   |-- 06_inventory_optimization.ipynb   
-|   `-- app.py                            
-
-|-- README.md
-`-- requirements.txt
-
 How to Run
-
 
 Step 1 — Install dependencies
 
@@ -164,24 +137,7 @@ streamlit run app.py
 
 The dashboard opens at http://localhost:8501
 
-Dashboard Features
-
-The Streamlit dashboard has five tabs:
-
-
-Demand Forecast — Actual vs predicted demand line chart with model metrics
-Delay Prediction — Delivery status breakdown, delay probability distribution,
-high risk orders table with ROC-AUC score
-Dead Stock — Product recommendation breakdown, liquidation and discount tables,
-ABC-XYZ segment analysis
-Inventory Recommendations — Filterable table by action type and segment,
-CSV download button
-Summary Report — Full project overview, model performance table, business impact
-
-
-
 Business Impact
-
 
 Delivery delay model with 0.7375 AUC enables proactive intervention before
 shipments go late, reducing customer complaints
