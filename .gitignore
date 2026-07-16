@@ -1,7 +1,12 @@
 # Data files
 *.csv
 *.pkl
+# Ignore all png files
 *.png
+
+# Except dashboard exports
+!dashboard_exports/
+!dashboard_exports/*.png
 *.jpg
 
 # Folders to skip
