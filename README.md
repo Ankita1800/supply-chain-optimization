@@ -134,6 +134,22 @@ streamlit run app.py
 
 The dashboard opens at http://localhost:8501
 
+## Power BI Dashboard
+
+Four-page interactive dashboard built on all model outputs.
+
+### Page 1 — Demand Forecasting
+![Demand Forecast](dashboard_exports/page1_demand_forecast.png)
+
+### Page 2 — Delay Prediction
+![Delay Prediction](dashboard_exports/page2_delay_prediction.png)
+
+### Page 3 — Dead Stock Detection
+![Dead Stock](dashboard_exports/page3_dead_stock.png)
+
+### Page 4 — Inventory Optimization
+![Inventory](dashboard_exports/page4_inventory_optimization.png)
+
 **Business Impact:**
 
 Delivery delay model with 0.7375 AUC enables proactive intervention before
@@ -148,3 +164,6 @@ high-value, high-consistency products
 **Author**
 
 **Ankita S**
+
+
+
